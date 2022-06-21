@@ -152,7 +152,7 @@ jobs:
     name: Terraform apply
     needs: [ plan ]
     runs-on: ubuntu-latest
-    environment: demo
+    environment: dev
     defaults:
       run:
         working-directory: ${{ env.tf_actions_working_dir }}
