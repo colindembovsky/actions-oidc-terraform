@@ -5,7 +5,7 @@ variable "resource_group_location" {
 }
 
 variable "resource_group_name" {
-  default = "cd-teroidc"
+  default     = "cd-teroidc"
   description = "Name of the resource group."
   type        = string
 }
