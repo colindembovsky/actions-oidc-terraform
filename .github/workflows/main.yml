@@ -14,8 +14,8 @@ jobs:
     
     steps:
     - run: |
-        echo "Hi there ${{ github.inputs.name }}"
+        echo "Hi there ${{ inputs.name }}"
   
     - run: |
-        echo "Also hi there ${{ github.inputs.name }}"
+        echo "Also hi there ${{ inputs.name }}"
   
