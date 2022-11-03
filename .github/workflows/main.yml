@@ -18,5 +18,5 @@ jobs:
   
     - run: |
         echo "Also hi there ${{ inputs.name }}"
-      if: inputs.name == join(fromJson('[":", "test", ":", " Colin"]'), '')
+      if: inputs.name == contains(inputs.name, 'test') && contains(inputs.name('Colin')
   
