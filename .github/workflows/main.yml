@@ -1,0 +1,21 @@
+on:
+  push: 
+    branches:
+    - main
+  workflow_dispatch:
+    inputs:
+      name:
+        type: string
+        default: Colin
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - run: |
+        echo "Hi there ${{ github.inputs.name }}"
+  
+    - run: |
+        echo "Also hi there ${{ github.inputs.name }}"
+  
