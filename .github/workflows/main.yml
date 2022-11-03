@@ -1,7 +1,6 @@
+name: Test
+
 on:
-  push: 
-    branches:
-    - main
   workflow_dispatch:
     inputs:
       name:
@@ -15,7 +14,9 @@ jobs:
     steps:
     - run: |
         echo "Hi there ${{ inputs.name }}"
+      if: inputs.name == "Colin"
   
     - run: |
         echo "Also hi there ${{ inputs.name }}"
+      if: inputs.name == ":work: Colin"
   
